@@ -7,7 +7,7 @@ header {
 
 .logo {
     position: absolute;
-    top: 32px;
+    top: 22px;
     left: 40%;
 }
 
@@ -53,7 +53,7 @@ h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 38px;
     position: absolute;
-    top: -6px;
+    top: -15px;
     left: 43%;
 }
 
@@ -73,6 +73,7 @@ body {
     background-image: url(https://images8.alphacoders.com/679/thumb-1920-679478.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .row:after {
