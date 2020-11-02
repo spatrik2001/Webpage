@@ -1,34 +1,64 @@
-header {
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #333333;
     color: white;
-    text-align: center;
-    height: 130px;
-}
-
-.logo {
-    position: absolute;
-    top: 22px;
-    left: 40%;
+    margin: 0;
 }
 
 * {
     box-sizing: border-box;
 }
 
-nav {
+/* Navigáció */
+#nav {
     overflow: hidden;
     background-color: #333333;
+    padding: 40px 10px;
+    transition: 0.4s;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 0;
 }
 
-nav a {
+#nav a {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 18px;
     float: none;
-    display: inline-block;
+    text-align: center;
     color: #ffffff;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
-    margin: 70px 0px;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 4px;
+}
+
+#nav #name {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+    color: orange;
+}
+
+#nav a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#nav a.active {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 580px) {
+    #nav {
+        padding: 20px 10px !important;
+    }
+
+    #nav a {
+        float: none;
+        text-align: center;
+    }
 }
 
 .fab fa-github {
@@ -36,70 +66,68 @@ nav a {
     margin: -5px 0px;
 }
 
-button {
-    border-radius: 8px;
-    background-color: #e7e7e7;
-    color: black;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-}
+/* Kép + felirat */
 
-h1 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 38px;
-    position: absolute;
-    top: -15px;
-    left: 43%;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #e7e7e7;
-    color: white;
-    margin: 0;
-}
-
-.column {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    float: none;
-    width: 100%;
-    padding: 200px;
-    font-size: 30px;
-    background-image: url(https://images8.alphacoders.com/679/thumb-1920-679478.jpg);
+.row {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sources/thumb-1920-679478.jpg");
+    height: 100%;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 74px;
+    padding-top: 3%;
+    height: 90px;
 }
 
-@media screen and (max-width:600px) {
-    .column {
-      width: 100%;
-    }
+.column {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 165px;
+    font-size: 30px;
+}
+.borderszoveg {
+    font-size: 22px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .border {
     float: none;
-    padding: 5px;
-    background-color: #333333;
+    background-color: #e7e7e7;
+    color: black;
+    border-radius: 5px;
+    height: 200%;
+    padding-bottom: 4%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
-.clearfix::after {
-    background-color: #e7e7e7;
-    content: "";
-    clear: both;
-    display: table;
-    height: 10px;
+.border button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19);
+    background-color: #333333;
+    border: none;
+    color: white;
+    padding: 18px 17px;
+    text-align: center;
+    font-size: 28px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.border button:hover {
+    opacity: 1;
 }
 
 h3 {
