@@ -2,29 +2,20 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #333333;
     color: black;
-    margin: 0;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 /* Navigáció */
-#nav {
+.nav {
     overflow: hidden;
     background-color: #333333;
-    padding: 40px 10px;
+    padding: 30px;
     transition: 0.4s;
     position: fixed;
-    text-align: center;
     width: 100%;
     top: 0;
-    opacity: 1;
 }
 
-#nav a {
-    float: none;
-    text-align: center;
+.nav a {
     color: #e7e7e7;
     padding: 14px;
     text-decoration: none;
@@ -32,10 +23,9 @@ body {
     line-height: 20px;
     border-radius: 4px;
     border-bottom: 3px solid transparent;
-    opacity: 1;
 }
 
-#nav #name {
+.nav #name {
     font-size: 35px;
     font-weight: bold;
     transition: 0.4s;
@@ -43,26 +33,24 @@ body {
     border-bottom: none;
 }
 
-#nav a:hover {
+.nav a:hover {
     background-color: #333333;
     color: #e7e7e7;
     border-bottom: 3px solid orange;
-    opacity: 1;
 }
 
-#nav a.active {
+.nav a.active {
     background-color: #333333;
     color: #e7e7e7;
     border-bottom: 3px solid orange;
-    opacity: 1;
 }
 
 @media screen and (max-width: 580px) {
-    #nav {
+    .nav {
         padding: 20px 10px !important;
     }
 
-    #nav a {
+    .nav a {
         float: none;
         text-align: center;
     }
@@ -77,7 +65,8 @@ body {
 
 .row {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sources/thumb-1920-679478.jpg");
-    height: 100%;
+    width: 100.78%;
+    height: 120%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -88,12 +77,13 @@ h1 {
     font-size: 74px;
     padding-top: 3%;
     height: 90px;
+    margin-bottom: 3%;
 }
 
 .column {
     text-align: center;
     width: 100%;
-    padding: 165px;
+    padding: 300px;
     font-size: 30px;
 }
 .borderszoveg {
@@ -107,22 +97,20 @@ h1 {
     background-color: #e7e7e7;
     color: black;
     border-radius: 5px;
-    height: 200%;
+    height: 100%;
     padding-bottom: 4%;
     margin-left: 7%;
     margin-right: 7%;
 }
 
-.border button {
+.btn {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19);
-    background-color: #333333;
-    border: none;
+    background-color: #545454;
     color: #e7e7e7;
     padding: 18px 17px;
     text-align: center;
     font-size: 28px;
     margin: 4px 2px;
-    opacity: 0.76;
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
@@ -131,8 +119,8 @@ h1 {
     font-weight: bold;
 }
 
-.border button:hover {
-    opacity: 0.88;
+.btn:hover {
+    background-color: #333333;
 }
 
 /* Képek egy 3 oszlopos táblában + feliratok */
@@ -183,16 +171,55 @@ h3 {
 /* Hírek */
 
 .main {
-    width: 70%;
+    float: left;
+    width: 62%;
     background-color: #e7e7e7;
     padding: 20px;
     margin-top: 10px;
-    margin-left: 1.5%;
+    margin-left: 2%;
+}
+
+.alahuzas {
+    border: 2px solid orange;
+    background-color: orange;
+    border-left: 2px;
+    border-right: 2px;
+    border-radius: 5px;
+}
+
+h2 {
+    float: left;
+}
+
+.datum {
+    float: right;
 }
 
 .image {
-    width: 80%;
-    height: 300px;
+    width: 55%;
+    height: 400px;
+    margin-top: 5%;
     padding: 20px;
     background-color: #aaaaaa;
+}
+
+.oldal {
+    float: right;
+    text-align: center;
+    width: 34%;
+    background-color: #e7e7e7;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 2%;
+}
+
+.reklam {
+    width: 400px;
+    height: 400px;
+}
+
+.reklam2 {
+    width: 480px;
+    height: 610px;
+    padding: 10px;
 }
